@@ -1,0 +1,56 @@
+// Presentation background color
+& {
+    background: #a83239;
+}
+
+// Control arrow color
+.controls button {
+    color: #ff0000;
+}
+
+// Fill color for the presentation progress bar
+.progress span {
+    background: #ff0000;
+}
+
+// Body text color
+.slides {
+    color: #009999;
+}
+
+// Link color
+.slides a {
+    color: red;
+}
+
+// Turn text white if the slide has a dark background
+.has-dark-background {
+    color: #fff;
+}
+
+// Larger slide numbers (if slide numbers are enabled for the deck)
+.slide-number {
+    font-size: 20px;
+}
+
+// Add a blue border to all slides (each slide is a <section>)
+.slides section {
+    outline: 1px solid blue;
+}
+
+// Add a red border to all vertical stacks of slides
+.slides section.stack {
+    outline: 1px solid red;
+}
+
+// Include a custom font
+@font-face {
+  font-family: "Cabin Sketch";
+  src: url("https://s3.amazonaws.com/static.slid.es/fonts/cabinsketch/cabinsketch-regular.woff") format("woff"),
+       url("https://s3.amazonaws.com/static.slid.es/fonts/cabinsketch/cabinsketch-regular.ttf") format("truetype");
+}
+
+.slides h1, .slides h2, .slides h3 {
+    font-family: "Cabin Sketch";
+}
+
